@@ -1,7 +1,7 @@
 # The Primo New UI Customization Workflow Development Environment
 
 
-##css documentation
+## css documentation
 
 - Primo uses Angular Directives massively in this project
 
@@ -67,10 +67,10 @@ prm-topbar.md-primoExplore-theme input {....}
 
 
 
-##Recipes/Examples:
+## Recipes/Examples:
 
 
-# css Recipe 1 - Color Scheme
+### css Recipe 1 - Color Scheme
 
 -  Open a new command line window
 
@@ -91,7 +91,7 @@ Run the following steps repeatedly until you are satisfied with the result
 
 
 
-# css Recipe 2 - Moving the Facets to the Left
+### css Recipe 2 - Moving the Facets to the Left
 
 
 -  Select the parent container containing the search result and the facets
