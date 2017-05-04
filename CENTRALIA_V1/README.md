@@ -1,7 +1,7 @@
 # The Primo New UI Customization Workflow Development Environment
 
 
-##Package documentation
+## Package documentation
 
 The development package allows you to configure :
 
