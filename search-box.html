@@ -1,0 +1,31 @@
+<!-- Primo Search to be placed in header -->
+
+<script type="text/javascript">
+function searchPrimo() {
+document.getElementById("primoQuery").value = "any,contains," + document.getElementById("primoQueryTemp").value.replace(/[,]/g, " ");
+document.forms["searchForm"].submit();
+}
+</script>
+
+<!-- Primo Search Box to be placed in desired location on page -->
+<form id="simple" name="searchForm" method="get" target="_self" action="https://wactc-centralia-primo.hosted.exlibrisgroup.com/primo-explore/search" enctype="application/x-www-form-urlencoded; charset=utf-8" onsubmit="searchPrimo()">
+<!-- Customizable Parameters -->
+<input type="hidden" name="institution" value="CENTRALIA">
+<input type="hidden" name="vid" value="CENTRALIA_V1">
+<input type="hidden" name="tab" value="default_tab">
+<input type="hidden" name="search_scope" value="EVERYTHING">
+<input type="hidden" name="mode" value="Basic">
+<!-- Fixed parameters -->
+<input type="hidden" name="displayMode" value="full">
+<input type="hidden" name="bulkSize" value="10">
+<input type="hidden" name="highlight" value="true">
+<input type="hidden" name="dum" value="true">
+<input type="hidden" name="query" id="primoQuery">
+<input type="hidden" name="displayField" value="all">
+<!-- Enable this if "Expand My Results" is enabled by default in Views Wizard -->
+<input type="hidden" name="pcAvailabiltyMode" value="true">
+<!-- Search Box -->
+<input type="text" id="primoQueryTemp" name="Search" placeholder="Search" style="width: 300px; font-size: 18px; margin: 10px; padding: 4px;">
+<!-- Search Button -->
+<input id="go" title="OneSearch" onclick="searchPrimo()" type="button" value="OneSearch" alt="Search for books, articles and more" style="width: 120px; height: 35px; font-size: 18px; font-weight: bold; background: #002F6D; color: #ffffff; text-align:center; padding: 4px;"> 
+</form>
