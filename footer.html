@@ -1,0 +1,67 @@
+<!--begin footer-->
+  <div class="EXLFooterLinksContainer">
+    <ul class="EXLFooterLinksList1">
+      <li class="EXLFooterFirstLink"><a href="http://www.library.org">Library Home</a></li>
+      <li class="EXLFooterLastLink"><a href="http://www.librarycontact.org">Contact Us</a></li>
+    </ul>
+  </div>
+
+<script type="text/javascript">
+//Redirects links on the Browse and A-Z list page to point to the new UI
+$('#exlidSearchFieldRibbonSimpleSearchLink a , #exlidAdvancedSearchRibbon .EXLSearchFieldRibbonFormLinks a').attr("href","/primo-explore/search?vid="+$("[name='vid']").attr("value"));
+</script>
+
+<script type="text/javascript">
+// Google Analytics with Adjust virtual location (simulation of GET search request) 
+
+var src = "";
+
+var qry = "";
+
+var s = "" + window.location.search;
+
+var sr0 = s.split("vl(freeText0)=");
+
+if (sr0.length > 1) qry = qry + ((qry.length == 0)? "&query=" : "+") + sr0[1].split("&")[0];
+
+var sr1 = s.split("vl(freeText1)=");
+
+if (sr1.length > 1) qry = qry + ((qry.length == 0)? "&query=" : "+") + sr1[1].split("&")[0];
+
+var sr2 = s.split("vl(freeText2)=");
+
+if (sr2.length > 1) qry = qry + ((qry.length == 0)? "&query=" : "+") + sr2[1].split("&")[0];
+
+if (qry.length > 0) src = window.location.pathname + window.location.search + qry;
+
+
+
+var _gaq = _gaq || [];
+
+_gaq.push(['_setAccount', 'UA-98618003-1']); 
+
+if (src == "") _gaq.push(['_trackPageview']);
+
+else _gaq.push(['_trackPageview',src])        
+
+_gaq.push(['_setDomainName', 'none']);
+
+_gaq.push(['_setAllowLinker', true]);
+
+(function() {
+
+var ga = document.createElement('script'); ga.type = 'text/javascript';
+
+ga.async = true;
+
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+
+var s = document.getElementsByTagName('script')[0];
+
+s.parentNode.insertBefore(ga, s); })();
+
+</script>
+
+
+<!--end footer-->
+
