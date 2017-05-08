@@ -14,6 +14,11 @@ color:#555555;
 padding-left:0.5em; 
 padding-right:0.5em; 
 }
+
+#exlidHeaderContainer
+{
+	background-color:#002F6D
+}
 /*---To move Library Search, Tags, A-Z, and Help flush to the right---*/
 #exlidMainMenuTile div.EXLMainMenuContainer {float: right; width: 40em;}
 
