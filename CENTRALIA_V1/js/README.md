@@ -1,7 +1,7 @@
 # The Primo New UI Customization Workflow Development Environment
 
 
-##JavaScript documentation
+## JavaScript documentation
 
 - When you want to add functionality to your Primo installation you will be using Angular Directives.
 
@@ -41,7 +41,7 @@ Example:
 
 
 
-##Concept
+## Concept
 
 - When You want to add your own JavaScript functionality - you will need to plug-in to placeholder Directives we added to the system.
 - Those directive are added as the last child element for every Primo directive (defined by the `prm-` prefix)
@@ -52,10 +52,10 @@ Example:
 
 
 
-##Recipes/Examples:
+## Recipes/Examples:
 
 
-# JavaScript Recipe 1 - a Static `hello world` html Message
+### JavaScript Recipe 1 - a Static `hello world` html Message
 
 
 -  Use the `showDirectives` (located in the root directory of this package is the showDirectives.txt file
@@ -81,7 +81,7 @@ Example:
 
 
 
-# JavaScript Recipe 2 - a Dynamic Directive
+### JavaScript Recipe 2 - a Dynamic Directive
 -  Use the `showDirectives` scriplet to identify the `prmSearchBarAfter` directive which you will plugin to
 -  Run the following command in your browsers' console tab:
 ```
@@ -146,7 +146,7 @@ app.controller('SearchBarAfterController', [function () {
 -  Save and refresh your browser
 
 
-# JavaScript Recipe 3 - Adding the Altmetrics Widget
+### JavaScript Recipe 3 - Adding the Altmetrics Widget
 -  Use the `showDirectives` scriplet to identify the `prmFullViewAfter` directive which you will plugin to
 -  Run the following command in your browsers' console tab:
 `angular.reloadWithDebugInfo()`
